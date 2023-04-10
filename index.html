@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Age calculator app</title>
+  </head>
+  <body>
+    <div class="main-content">
+      <div class="inputs">
+        <div>
+          <label id="day-label">Day:</label>
+          <input
+            id="day"
+            type="text"
+            maxlength="2"
+            pattern="[0-9]{1,2}"
+            placeholder="DD"
+            autocomplete="bday-day"
+            required />
+          <p class="error" id="day-error">Please enter a valid day.</p>
+        </div>
+        <div>
+          <label id="month-label">Month:</label>
+          <input
+            id="month"
+            type="text"
+            maxlength="2"
+            pattern="[0-9]{1,2}"
+            placeholder="MM"
+            autocomplete="bday-month"
+            required />
+          <p class="error" id="month-error">Please enter a valid month.</p>
+        </div>
+        <div>
+          <label id="year-label">Year:</label>
+          <input
+            id="year"
+            type="text"
+            maxlength="4"
+            pattern="[0-9]{4}"
+            placeholder="YYYY"
+            autocomplete="bday-year"
+            required />
+          <p class="error" id="year-error">Please enter a valid year.</p>
+        </div>
+      </div>
+
+      <div class="data">
+        <h2><span id="year-value">--</span> years</h2>
+        <h2><span id="month-value">--</span> months</h2>
+        <h2><span id="day-value">--</span> days</h2>
+        <div id="btn" class="btn">
+          <img src="assets/images/icon-arrow.svg" />
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
